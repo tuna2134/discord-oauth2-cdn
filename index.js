@@ -1,4 +1,5 @@
-const axios = require('axios').default;
+import axios from 'axios';
+import Cookies from 'js-cookie';
 
 async function fetch_user() {
   const response = await axios.get("https://discord.com/api/users/@me", {
