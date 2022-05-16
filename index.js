@@ -9,3 +9,7 @@ async function fetch_user() {
   });
   return response.data;
 }
+
+module.exports = {
+  fetch_user: fetch_user
+};
