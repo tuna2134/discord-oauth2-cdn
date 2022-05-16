@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>Hello</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <script>
+      import {fetch_user} from "discord_oauth2_cdn.js";
+      
+      async function main() {
+        user = await fetch_user();
+        console.log(user.id);
+      };
+    </script>
+  </body>
+</html>
